@@ -12,6 +12,10 @@ body{
     min-height: 100vh!important;
 }
 
+#contactBody{
+    min-height: 100vh!important;
+}
+
 .row{
     height: 100%;
 }
@@ -105,6 +109,16 @@ a{
     text-shadow: 1px 1px 11px rgba(0,0,0);
 }
 
+.navLink, #nameTitle{
+    transition: all .2s ease-out!important;
+}
+
+.navLink:hover, #nameTitle:hover{
+    transform: scale(1.2)!important;
+    color: #c1ffd8!important;
+    text-decoration: none;
+}
+
 .li{
     margin: 0px;
 }
@@ -140,7 +154,7 @@ a{
   }
 
 #aboutBackground{
-    background-image: linear-gradient(rgba(231, 223, 223, 0.897), rgba(231, 223, 223, 0.897)),
+    background-image: linear-gradient(rgb(139, 139, 139, 0.8), rgba(139, 139, 139, 0.8)),
     url("../../images/homeBackground.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,10 +175,178 @@ a{
 
 #aboutCol{
    margin: auto;
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+}
+
+#aboutCol p{
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    text-shadow: 1px 1px 11px rgb(182, 182, 182);
+ }
+
+#aboutCol h1, #contactHead{
+    color: #fff;
+    text-shadow: 1px 1px 11px rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 11px rgba(0,0,0);
 }
 
 #aboutPicCol{
     display: none;
+}
+
+/* .portCol{
+    margin-top: 25px;
+} */
+
+[class*="col-md-6"]:not(:last-child){
+    margin-bottom: 20px!important;
+}
+
+[class*="col-md-6"]:last-child{
+    margin-bottom: 20px!important;
+}
+
+#portBody{
+    min-height: 100vh!important;
+}
+
+.portImage{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid;
+    border-color: #c1ffd8;
+    padding: 4px;
+    box-shadow: 1px 1px 11px rgba(0,0,0);
+    }
+
+#portBackground{
+    background-image: linear-gradient(rgb(139, 139, 139, 0.8), rgba(139, 139, 139, 0.8)),
+    url("../../images/homeBackground.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #c1ffd8;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .portWork{
+      position: relative;
+      width: 100%;
+  }
+
+  .portWork:hover .overlay{
+      opacity: 1;
+  }
+
+  .portText{
+    color: rgb(90, 89, 89);
+    /* text-shadow: 1px 1px 11px rgba(0,0,0); */
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+.portLink{
+    background-color: #c1ffd8!important;
+    color: rgb(90, 89, 89)!important;
+    /* text-shadow: 1px 1px 12px rgba(0,0,0); */
+    margin-top: 10px;
+}
+
+.portTitle{
+    color: #fff;
+    text-shadow: 1px 1px 11px rgba(0,0,0);
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.portLink:active, .portLink:focus, .portLink:active:focus, .portLink.active:focus {
+    outline: none !important;
+    box-shadow: none!important;
+    background-color: #76b98f!important;
+}
+
+.portLink:hover{
+    background-color: #c1ffd8!important;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover)!important;
+    transform: translateY(-0.25em)!important;
+}
+
+.btn-primary:active{
+    background-image: none!important;
+}
+
+.fa {
+    padding: 40px;
+    font-size: 30px!important;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+
+  .fa-linkedin, .fa-github, .fa-envelope, .fa-phone {
+    background: #c1ffd8;
+    color: white;
+    text-shadow: 1px 1px 11px rgba(0,0,0);
+  }
+
+  .fa-linkedin:hover, .fa-linkedin:focus, .fa-github:hover, .fa-github:focus, .fa-envelope:hover, .fa-envelope:focus, .fa-phone:hover, .fa-phone:focus{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+  }
+
+  .fa-envelope{
+      padding-left: 37px;
+  }
+
+#contactCol{
+    margin: auto;
+    display: block;
+    height: 100%;
+}
+
+#contactHead{
+    margin-bottom: 40px;
 }
 
 @media screen and (max-width: 767px){
