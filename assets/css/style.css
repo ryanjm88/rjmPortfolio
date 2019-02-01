@@ -259,7 +259,9 @@ a{
 
   .portWork{
       position: relative;
-      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
   }
 
   .portWork:hover .overlay{
@@ -305,6 +307,14 @@ a{
     background-color: #c1ffd8!important;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover)!important;
     transform: translateY(-0.25em)!important;
+}
+
+.portDiv{
+    width: 245px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
 }
 
 .btn-primary:active{
