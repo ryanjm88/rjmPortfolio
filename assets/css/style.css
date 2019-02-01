@@ -197,9 +197,11 @@ a{
     display: none;
 }
 
-/* .portCol{
-    margin-top: 25px;
-} */
+.portCol{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 [class*="col-md-6"]:not(:last-child){
     margin-bottom: 20px!important;
