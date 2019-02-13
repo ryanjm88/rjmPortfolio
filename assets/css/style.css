@@ -12,6 +12,10 @@ body{
     min-height: 100vh!important;
 }
 
+.icon-bar{
+   background-color: #c1ffd8!important;
+}
+
 #contactBody{
     min-height: 100vh!important;
 }
