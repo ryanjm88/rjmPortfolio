@@ -115,6 +115,8 @@ a{
 
 .navLink, #nameTitle{
     transition: all .2s ease-out!important;
+    -moz-transition: all .2s ease-out!important;
+    -webkit-transition: all .2s ease-out!important;
 }
 
 .navLink:hover, #nameTitle:hover{
@@ -215,6 +217,13 @@ a{
     margin-bottom: 20px!important;
 }
 
+.portColTitle h2{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 11px rgba(0,0,0);
+    margin-top: 50px;
+}
+
 #portBody{
     min-height: 100vh!important;
 }
@@ -253,7 +262,6 @@ a{
     left: 0;
     right: 0;
     opacity: 0;
-    transition: .5s ease;
     background-color: #c1ffd8;
     border-radius: 100%;
     height: 240px;
