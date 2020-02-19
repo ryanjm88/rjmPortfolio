@@ -186,9 +186,9 @@ a{
 }
 
 #aboutCol p{
-    color: rgb(34, 34, 34);
+    color: #fff;
     font-size: 18px;
-    text-shadow: 1px 1px 11px rgb(182, 182, 182);
+    text-shadow: 1px 1px 11px rgb(0, 0, 0);
  }
 
 #aboutCol h1, #contactHead{
